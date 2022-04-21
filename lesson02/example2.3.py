@@ -19,3 +19,4 @@ if month in range(1, 13):
 else:
     print("Ошибка!")
 
+
