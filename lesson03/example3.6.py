@@ -4,6 +4,14 @@
 # Каждое слово состоит из латинских букв в нижнем регистре. Сделать вывод исходной строки,
 # но каждое слово должно начинаться с заглавной буквы. Необходимо использовать написанную ранее функцию int_func().
 
-def int_func(a):
-    return a.title()
-print(int_func("i love people"))
+def int_func(my_str):
+    s = []
+    for word in my_str.split(' '):
+        if not word.istitle():
+            word = word[0].upper() + word[1:].lower()
+            s.append(word)
+        else:
+            s.append(word)
+    return ' '.join(s)
+
+print(int_func("я люблю людей"))
