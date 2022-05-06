@@ -2,10 +2,10 @@
 # В расчете необходимо использовать формулу: (выработка в часах*ставка в час) + премия.
 # Для выполнения расчета для конкретных значений необходимо запускать скрипт с параметрами.
 
-def salary():
-    a = float(input('Введите количество отработанных часов: '))
-    b = float(input('Введите ставку за 1 час: '))
-    c = float(input('Укажите размер премии: '))
-    return (a * b) + c
+from sys import argv
 
-print(f'Размер заработной платы составит: {salary() }')
+file_name, working_hours, output_hours, bonus = argv
+
+salary = (float(working_hours) * float(output_hours)) + float(bonus)
+
+print(f'Размер заработной платы составит: {salary}')
