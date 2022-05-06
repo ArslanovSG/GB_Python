@@ -3,7 +3,7 @@
 
 my_list = ["Я люблю людей!\n", "Вы тоже\n", "любите!\n"]
 
-with open("text2.txt", "w+") as file_object:
+with open("text2.txt", "w+", encoding="utf-8") as file_object:
     file_object.writelines(my_list)
 with open("text2.txt") as file_object:
     lines = 0

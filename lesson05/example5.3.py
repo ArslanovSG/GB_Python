@@ -30,7 +30,7 @@ finally:
 summa = 0
 count = 0
 employee = []
-with open("text3.txt", "r") as file_object:
+with open("text3.txt", "r", encoding="utf-8") as file_object:
     for line in file_object:
         print(line, end="")
         counter = line.split(" ")

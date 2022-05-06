@@ -17,7 +17,7 @@ def my_func(string):
             string[key] = my_list[value]
     return string
 
-with codecs.open("text4.txt", "r") as list_numb:
+with codecs.open("text4.txt", "r", encoding="utf-8") as list_numb:
     for line in list_numb:
         string = line.split()
         with codecs.open("text4_new.txt", "a+") as list_numb_new:
